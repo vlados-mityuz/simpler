@@ -58,8 +58,7 @@ module Simpler
     end
 
     def response(status, body)
-      response = Rack::Response.new([body], status, {'Content-Type' => 'text/plain'})
-      response.finish
+      Rack::Response.new([body], status, {'Content-Type' => 'text/plain'}).finish
     end
 
   end

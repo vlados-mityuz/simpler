@@ -33,8 +33,6 @@ module Simpler
         end
 
         env['simpler.params'] = @params
-
-        return true
       end
     end
   end
